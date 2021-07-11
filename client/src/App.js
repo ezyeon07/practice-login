@@ -31,11 +31,9 @@ function App() {
 
   return (
     <div className="App">
-      {
-        isLogin
-        ? <Mypage logoutHandler={logoutHandler} userData={userData} />
-        : <Login loginHandler={loginHandler} setUserInfo={setUserInfo}/>
-      }
+    
+      <Mypage logoutHandler={logoutHandler} userData={userData} />
+      <Login loginHandler={loginHandler} setUserInfo={setUserInfo}/>
       <Signup />
     </div>
   );
